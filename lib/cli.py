@@ -70,8 +70,12 @@ def main():
                 ic("No students found")
             else:
                 ic("All Students:")
-                for s in students:
-                    ic(f"{s.id}: {s.name} | Grade: {s.grade}")
+                for student in students:
+                    ic(f"\n Student: {student.name} (ID:{student.id})")
+                    if student.contact_info:
+                        ic(f"Address: {student.contact_info.address}")
+                        ic(f"Address: {student.contact_info.phone}")
+                        ic(f"Address: {student.contact_info.email}")
 
         elif choice == '8':
             student_id = int(input("Enter student ID: "))
