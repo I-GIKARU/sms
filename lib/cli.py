@@ -25,19 +25,19 @@ def main():
             name = input("Enter student name: ")
             grade = input("Enter student grade: ")
             student = ops.add_student(name, grade)
-            ic(f"Added student with ID: {student.id}")
+            ic(f"Added student {student.name} with ID: {student.id}")
 
         elif choice == '2':
             name = input("Enter teacher name: ")
             department = input("Enter department: ")
             teacher = ops.add_teacher(name, department)
-            ic(f"Added teacher with ID: {teacher.id}")
+            ic(f"Added teacher {teacher.name} with ID: {teacher.id}")
 
         elif choice == '3':
             name = input("Enter course name: ")
             teacher_id = int(input("Enter teacher ID: "))
             course = ops.add_course(name, teacher_id)
-            ic(f"Added course with ID: {course.id}")
+            ic(f"Added course {course.name} with ID: {course.id}")
 
         elif choice == '4':
             student_id = int(input("Enter student ID: "))
