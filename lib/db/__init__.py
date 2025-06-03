@@ -1,4 +1,4 @@
-# Initialize database package
+
 from .models import Base
 from .operations import SchoolOperations
 from sqlalchemy import create_engine
