@@ -1,3 +1,4 @@
+#lib/cli.py
 from icecream import ic
 from db import init_db, get_session, SchoolOperations
 
